@@ -717,9 +717,22 @@ $y1: rgba(253,208,0, .8);
         border-radius: 50%;
         cursor: pointer;
         @include transition(background-color 0.3s);
+        position: relative;
+
+        span{
+            opacity: 0;
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            @include transition(all 0.3s);
+        }
 
         &:hover {
             background-color: #444;
+            span{
+                opacity: 1;
+                left: 3vw;
+            }
         }
         &:focus {
             background-color: #444;
