@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/akatsuki.css">
+
+        <script type="text/javascript" src='assets/js/jquery.min.js'></script>
+        <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js'></script>
+
+        <title>FlyC</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="background-class">
+                <template v-for='time in backTimes'>
+                <span :class="item.className" v-for='item in backWord' v-text='item.char'></span>
+                </template>
+            </div>
+            <div class="full_container">
+                
+                <div id="forHeight" style="position: absolute; opacity: 0; pointer-events: none; height: 100vh;"></div>
+                <div class="btns">
+                    <button class="btn1 btn"></button>
+                    <button class="btn2 btn"></button>
+                    <button class="btn3 btn"></button>
+                    <button class="btn4 btn"></button>
+                    <button class="btn5 btn"></button>
+                    <button class="btn6 btn"></button>
+                    <button class="btn7 btn"></button>
+                    <button class="btn8 btn"></button>
+                    <button class="btn9 btn"></button>
+                </div>
+                <div class="perspectiveView">
+                    <div class="layer layer1">
+                        <div class="view view1">
+                            <span class="show_color">s</span>
+                            <span class="hide_color">c</span>
+                            <span class="hide_color">r</span>
+                            <span class="hide_color">o</span>
+                            <span class="show_color">l</span>
+                            <span class="hide_color">l</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">d</span>
+                            <span class="show_color">o</span>
+                            <span class="hide_color">w</span>
+                            <span class="hide_color">n</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">a</span>
+                            <span class="show_color">n</span>
+                            <span class="hide_color">d</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">h</span>
+                            <span class="hide_color">a</span>
+                            <span class="show_color">v</span>
+                            <span class="hide_color">e</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">f</span>
+                            <span class="hide_color">u</span>
+                            <span class="show_color">n</span>
+                            <span class="hide_color">!</span>
+                        </div>
+                        <div class="view view2">
+                            <div class="content">
+                                <span class="show_color">我</span>
+                                <span class="hide_color">是</span>
+                                <span class="hide_color name_style">鍾</span>
+                                <span class="hide_color name_style">維</span>
+                                <span class="show_color name_style">聖</span>
+                                <br>
+                                <span class="hide_color">致</span>
+                                <span class="hide_color">力</span>
+                                <span class="show_color">於</span>
+                                <span class="hide_color">做</span>
+                                <span class="hide_color">出</span>
+                                <span class="hide_color">令</span>
+                                <span class="show_color">人</span>
+                                <span class="hide_color">驚</span>
+                                <span class="hide_color">豔</span>
+                                <span class="hide_color">的</span>
+                                <span class="show_color">網</span>
+                                <span class="hide_color">站</span>
+                                <br>
+                                <br>
+                                <span class="show_color">相</span>
+                                <span class="hide_color">信</span>
+                                <span class="hide_color">人</span>
+                                <span class="hide_color">生</span>
+                                <span class="show_color">是</span>
+                                <span class="hide_color">一</span>
+                                <span class="hide_color">場</span>
+                                <span class="hide_color">驚</span>
+                                <span class="show_color">險</span>
+                                <span class="hide_color">刺</span>
+                                <span class="hide_color">激</span>
+                                <span class="hide_color">的</span>
+                                <span class="show_color">旅</span>
+                                <span class="hide_color">途</span>
+                                <br>
+                                <span class="hide_color">在</span>
+                                <span class="show_color">藝</span>
+                                <span class="hide_color">術</span>
+                                <span class="hide_color">與</span>
+                                <span class="hide_color">邏</span>
+                                <span class="show_color">輯</span>
+                                <span class="hide_color">間</span>
+                                <span class="hide_color">取</span>
+                                <span class="hide_color">得</span>
+                                <span class="show_color">平</span>
+                                <span class="hide_color">衡</span>
+                                <span class="hide_color">的</span>
+                                <span class="hide_color">道</span>
+                                <span class="show_color">路</span>
+                                <span class="hide_color">上</span>
+                                <br>
+                                <span class="hide_color">今</span>
+                                <span class="show_color">後</span>
+                                <span class="hide_color">也</span>
+                                <span class="hide_color">會</span>
+                                <span class="hide_color">繼</span>
+                                <span class="show_color">續</span>
+                                <span class="hide_color">努</span>
+                                <span class="hide_color">力</span>
+                            </div>
+                        </div>
+                        <div class="view view3">
+                            <img src="images/profile2.jpg" alt="profile">
+                        </div>
+                        <div class="view view4">
+                            <div class="content shadow-text html">
+                                <section>
+                                    <h2>HTML</h2>
+                                    <div class="hide_n_show">
+                                        <p>語意化標籤</p>
+                                        <p>Emmet 使用</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="view view5">
+                            <div class="content shadow-text canvas">
+                                <section>
+                                    <h2>Canvas</h2>
+                                    <div class="hide_n_show">
+                                        <p>keyframes</p>
+                                        <p>global composite operation</p>
+                                        <p>transform matrix</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="view view6">
+                            <h1 class="reason_content shadow-text">為什麼我想加入Akatsuki?</h1>
+                            <div class="circle top">
+                                <div class="circle_middle top">
+                                    <div class="circle_content right"></div>
+                                    <div class="content">「能否讓自己也感動」</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view view7">
+                            <div class="background"></div>
+                        </div>
+                        <div class="view view8">
+                        </div>
+                        <div class="view view9">
+                        </div>
+                    </div>
+                    <div class="layer layer2">
+                        <div class="view view1">                    
+                            <span class="hide_color">s</span>
+                            <span class="show_color">c</span>
+                            <span class="hide_color">r</span>
+                            <span class="hide_color">o</span>
+                            <span class="hide_color">l</span>
+                            <span class="show_color">l</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">d</span>
+                            <span class="hide_color">o</span>
+                            <span class="show_color">w</span>
+                            <span class="hide_color">n</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">a</span>
+                            <span class="hide_color">n</span>
+                            <span class="show_color">d</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">h</span>
+                            <span class="hide_color">a</span>
+                            <span class="hide_color">v</span>
+                            <span class="show_color">e</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">f</span>
+                            <span class="hide_color">u</span>
+                            <span class="hide_color">n</span>
+                            <span class="show_color">!</span>
+                        </div>
+                        <div class="view view2">
+                            <img src="images/profile1.jpg" alt="profile">
+                            <div class="content">
+                                <span class="hide_color">我</span>
+                                <span class="show_color">是</span>
+                                <span class="hide_color name_style">鍾</span>
+                                <span class="hide_color name_style">維</span>
+                                <span class="hide_color name_style">聖</span>
+                                <br>
+                                <span class="hide_color">致</span>
+                                <span class="hide_color">力</span>
+                                <span class="hide_color">於</span>
+                                <span class="show_color">做</span>
+                                <span class="hide_color">出</span>
+                                <span class="hide_color">令</span>
+                                <span class="hide_color">人</span>
+                                <span class="show_color">驚</span>
+                                <span class="hide_color">豔</span>
+                                <span class="hide_color">的</span>
+                                <span class="hide_color">網</span>
+                                <span class="show_color">站</span>
+                                <br>
+                                <br>
+                                <span class="hide_color">相</span>
+                                <span class="show_color">信</span>
+                                <span class="hide_color">人</span>
+                                <span class="hide_color">生</span>
+                                <span class="hide_color">是</span>
+                                <span class="show_color">一</span>
+                                <span class="hide_color">場</span>
+                                <span class="hide_color">驚</span>
+                                <span class="hide_color">險</span>
+                                <span class="show_color">刺</span>
+                                <span class="hide_color">激</span>
+                                <span class="hide_color">的</span>
+                                <span class="hide_color">旅</span>
+                                <span class="show_color">途</span>
+                                <br>
+                                <span class="hide_color">在</span>
+                                <span class="hide_color">藝</span>
+                                <span class="show_color">術</span>
+                                <span class="hide_color">與</span>
+                                <span class="hide_color">邏</span>
+                                <span class="hide_color">輯</span>
+                                <span class="show_color">間</span>
+                                <span class="hide_color">取</span>
+                                <span class="hide_color">得</span>
+                                <span class="hide_color">平</span>
+                                <span class="show_color">衡</span>
+                                <span class="hide_color">的</span>
+                                <span class="hide_color">道</span>
+                                <span class="hide_color">路</span>
+                                <span class="show_color">上</span>
+                                <br>
+                                <span class="hide_color">今</span>
+                                <span class="hide_color">後</span>
+                                <span class="show_color">也</span>
+                                <span class="hide_color">會</span>
+                                <span class="hide_color">繼</span>
+                                <span class="hide_color">續</span>
+                                <span class="show_color">努</span>
+                                <span class="hide_color">力</span>
+                            </div>
+                        </div>
+                        <div class="view view3">
+                            <img src="images/timeline.png" alt="timeline">
+                        </div>
+                        <div class="view view4">
+                            <div class="content shadow-text css">
+                                <section>
+                                    <h2>CSS</h2>
+                                    <div class="hide_n_show">
+                                        <p>跨瀏覽器處理</p>
+                                        <p>偽元素</p>
+                                        <p>複合選擇器</p>
+                                        <p>SCSS with compass</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="view view5">
+                            <div class="content shadow-text svg">
+                                <section>
+                                    <h2>SVG</h2>
+                                    <div class="hide_n_show">
+                                        <p>標籤 path, def 使用 </p>
+                                        <p>視域Viewport 概念</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="view view6">
+                            <div class="circle right">
+                                <div class="circle_middle right">
+                                    <div class="circle_content bottom"></div>
+                                    <div class="content">遊戲的力量，好比放大鏡。對事物的正反兩面，都具備了放大的可能。</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view view7">
+                            <section class="toM">
+                                <h1>覺得 Akatsuki 可以帶給自己什麼?</h1>
+                                <br>
+                                <p>透過早上的Game Intro, 可以讓我知道最新的遊戲相關新知!</p>
+                                <p>常態性地處在日英語環境，一 定 會 進 步 </p>
+                                <p>非常舒適的工作氛圍，鞋子的部分讓我好驚訝</p>
+                                <br>
+                                <p>他國風格的前端技術風格學習和心法</p>
+                                <p>快速開發下，前端技術的磨練與進步</p>
+                                <br>
+                                <p>想去上班的動力，和</p>
+                                <p>透過娛樂改變世界的機會</p>
+                            </section>
+                        </div>
+                        <div class="view view8">
+                        </div>
+                        <div class="view view9">
+                            
+                        </div>
+                    </div>
+                    <div class="layer layer3">
+                        <div class="view view1">                    
+                            <span class="hide_color">s</span>
+                            <span class="hide_color">c</span>
+                            <span class="show_color">r</span>
+                            <span class="hide_color">o</span>
+                            <span class="hide_color">l</span>
+                            <span class="hide_color">l</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">d</span>
+                            <span class="hide_color">o</span>
+                            <span class="hide_color">w</span>
+                            <span class="show_color">n</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">a</span>
+                            <span class="hide_color">n</span>
+                            <span class="hide_color">d</span>
+                            <span class="hide_color">_</span>
+                            <span class="show_color">h</span>
+                            <span class="hide_color">a</span>
+                            <span class="hide_color">v</span>
+                            <span class="hide_color">e</span>
+                            <span class="hide_color">_</span>
+                            <span class="show_color">f</span>
+                            <span class="hide_color">u</span>
+                            <span class="hide_color">n</span>
+                            <span class="hide_color">!</span>
+                        </div>
+                        <div class="view view2">
+                            <div class="content">
+                                <span class="hide_color">我</span>
+                                <span class="hide_color">是</span>
+                                <span class="show_color name_style">鍾</span>
+                                <span class="hide_color name_style">維</span>
+                                <span class="hide_color name_style">聖</span>
+                                <br>
+                                <span class="show_color">致</span>
+                                <span class="hide_color">力</span>
+                                <span class="hide_color">於</span>
+                                <span class="hide_color">做</span>
+                                <span class="show_color">出</span>
+                                <span class="hide_color">令</span>
+                                <span class="hide_color">人</span>
+                                <span class="hide_color">驚</span>
+                                <span class="show_color">豔</span>
+                                <span class="hide_color">的</span>
+                                <span class="hide_color">網</span>
+                                <span class="hide_color">站</span>
+                                <br>
+                                <br>
+                                <span class="hide_color">相</span>
+                                <span class="hide_color">信</span>
+                                <span class="show_color">人</span>
+                                <span class="hide_color">生</span>
+                                <span class="hide_color">是</span>
+                                <span class="hide_color">一</span>
+                                <span class="show_color">場</span>
+                                <span class="hide_color">驚</span>
+                                <span class="hide_color">險</span>
+                                <span class="hide_color">刺</span>
+                                <span class="show_color">激</span>
+                                <span class="hide_color">的</span>
+                                <span class="hide_color">旅</span>
+                                <span class="hide_color">途</span>
+                                <br>
+                                <span class="hide_color">在</span>
+                                <span class="hide_color">藝</span>
+                                <span class="hide_color">術</span>
+                                <span class="show_color">與</span>
+                                <span class="hide_color">邏</span>
+                                <span class="hide_color">輯</span>
+                                <span class="hide_color">間</span>
+                                <span class="show_color">取</span>
+                                <span class="hide_color">得</span>
+                                <span class="hide_color">平</span>
+                                <span class="hide_color">衡</span>
+                                <span class="show_color">的</span>
+                                <span class="hide_color">道</span>
+                                <span class="hide_color">路</span>
+                                <span class="hide_color">上</span>
+                                <br>
+                                <span class="hide_color">今</span>
+                                <span class="hide_color">後</span>
+                                <span class="hide_color">也</span>
+                                <span class="show_color">會</span>
+                                <span class="hide_color">繼</span>
+                                <span class="hide_color">續</span>
+                                <span class="hide_color">努</span>
+                                <span class="show_color">力</span>
+                            </div>
+                        </div>
+                        <div class="view view3">
+                            <div class="content">
+                                <span class="show_color">人</span>
+                                <span class="show_color">稱</span>
+                                <span class="hide_color name_style">飛</span>
+                                <span class="show_color name_style">膝</span>
+                                <br>
+                                <span class="show_color">個</span>
+                                <span class="show_color">性</span>
+                                <span class="show_color">隨</span>
+                                <span class="show_color">和</span>
+                                <span class="show_color">、</span>
+                                <span class="hide_color">帶</span>
+                                <span class="show_color">點</span>
+                                <span class="show_color">幽</span>
+                                <span class="hide_color">默</span>
+                                <br>
+                                <span class="show_color">喜</span>
+                                <span class="hide_color">愛</span>
+                                <span class="show_color">動</span>
+                                <span class="show_color">漫</span>
+                                <span class="hide_color">與</span>
+                                <span class="show_color">音</span>
+                                <span class="show_color">樂</span>
+                                <br>
+                                <span class="show_color">期</span>
+                                <span class="show_color">許</span>
+                                <span class="hide_color">自</span>
+                                <span class="show_color">己</span>
+                                <span class="show_color">可</span>
+                                <span class="hide_color">以</span>
+                                <span class="show_color">成</span>
+                                <span class="show_color">為</span>
+                                <span class="show_color">被</span>
+                                <span class="hide_color">別</span>
+                                <span class="show_color">人</span>
+                                <span class="show_color">信</span>
+                                <span class="show_color">任</span>
+                                <span class="hide_color">的</span>
+                                <span class="show_color">對</span>
+                                <span class="show_color">象</span>
+                                <br>
+                                <span class="show_color">期</span>
+                                <span class="show_color">許</span>
+                                <span class="hide_color">自</span>
+                                <span class="show_color">己</span>
+                                <span class="hide_color">可</span>
+                                <span class="show_color">以</span>
+                                <span class="show_color">一</span>
+                                <span class="hide_color">次</span>
+                                <span class="show_color">又</span>
+                                <span class="show_color">一</span>
+                                <span class="show_color">次</span>
+                                <span class="hide_color">地</span>
+                                <span class="show_color">感</span>
+                                <span class="hide_color">動</span>
+                                <span class="show_color">他</span>
+                                <span class="show_color">人</span>
+                            </div>
+                        </div>
+                        <div class="view view4">
+                            <div class="content shadow-text js">
+                                <section>
+                                    <h2>Javascript</h2>
+                                    <div class="hide_n_show">
+                                        <p>熟稔原生操作物件語法</p>
+                                        <p>非同步的事件呼叫</p>
+                                        <p>prototyping</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="view view5">
+                            <div class="content shadow-text vue">
+                                <section>
+                                    <h2>Vue</h2>
+                                    <div class="hide_n_show">
+                                        <p>Data binding</p>
+                                        <p>Component 的使用</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="view view6">
+                            <div class="circle bottom">
+                                <div class="circle_middle bottom">
+                                    <div class="circle_content left"></div>
+                                    <div class="content">認真的，開心地過著每一天。我們認為那才是人生的幸福狀態。</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view view7">
+                            <section class="toC">
+                                <h1>覺得自己可以帶給Akatsuki 什麼?</h1>
+                                <br>
+                                <p>css 切版與渲染資料是小case</p>
+                                <p>js 小工具開發與除錯已是常態</p>
+                                <br>
+                                <p>網頁前端工程的特效與樣式開發</p>
+                                <p>各類遊戲官網的協力開發與製作</p>
+                                <p>前端渲染引擎的協作與新技術研究</p>
+                                <br>
+                                <p>扣掉技術</p>
+                                <p>自認是個很好相處的人</p>
+                                <p>所以可以帶給Akatsuki 一個很好相處的合作夥伴 :D</p>
+                            </section>
+                        </div>
+                        <div class="view view8">
+                            <div class="content">
+                                <p>"如果是工程師，大部分是獨立作業沒有錯" - Jerry Tu</p>
+                                <p>不知道為什麼，看到這句話的時候笑了</p>
+                                <p>我很喜歡Akatsuki 給人的感覺和用遊戲改變世界的理念</p>
+                                <p>也很喜歡儘管在輕鬆的環境下仍能保有專業的那份從容</p>
+                                <br>
+                                <p class="i_wanna_be">我想成為那種人</p>
+                                <br>
+                                <p>希望自己可以驕傲地說我是Akatsuki 的一份子</p>
+                                <p>正和一群來自世界各地的人們起改變世界</p>
+                                <p>希望可以給我一個機會，謝謝</p>
+                            </div>
+                        </div>
+                        <div class="view view9">
+                        </div>
+                    </div>
+                    <div class="layer layer4">
+                        <div class="view view1">                    
+                            <span class="hide_color">s</span>
+                            <span class="hide_color">c</span>
+                            <span class="hide_color">r</span>
+                            <span class="show_color">o</span>
+                            <span class="hide_color">l</span>
+                            <span class="hide_color">l</span>
+                            <span class="hide_color">_</span>
+                            <span class="show_color">d</span>
+                            <span class="hide_color">o</span>
+                            <span class="hide_color">w</span>
+                            <span class="hide_color">n</span>
+                            <span class="hide_color">_</span>
+                            <span class="show_color">a</span>
+                            <span class="hide_color">n</span>
+                            <span class="hide_color">d</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">h</span>
+                            <span class="show_color">a</span>
+                            <span class="hide_color">v</span>
+                            <span class="hide_color">e</span>
+                            <span class="hide_color">_</span>
+                            <span class="hide_color">f</span>
+                            <span class="show_color">u</span>
+                            <span class="hide_color">n</span>
+                            <span class="hide_color">!</span>
+                        </div>
+                        <div class="view view2">
+                            <div class="content">
+                                <span class="hide_color">我</span>
+                                <span class="hide_color">是</span>
+                                <span class="hide_color name_style">鍾</span>
+                                <span class="show_color name_style">維</span>
+                                <span class="hide_color name_style">聖</span>
+                                <br>
+                                <span class="hide_color">致</span>
+                                <span class="show_color">力</span>
+                                <span class="hide_color">於</span>
+                                <span class="hide_color">做</span>
+                                <span class="hide_color">出</span>
+                                <span class="show_color">令</span>
+                                <span class="hide_color">人</span>
+                                <span class="hide_color">驚</span>
+                                <span class="hide_color">豔</span>
+                                <span class="show_color">的</span>
+                                <span class="hide_color">網</span>
+                                <span class="hide_color">站</span>
+                                <br>
+                                <br>
+                                <span class="hide_color">相</span>
+                                <span class="hide_color">信</span>
+                                <span class="hide_color">人</span>
+                                <span class="show_color">生</span>
+                                <span class="hide_color">是</span>
+                                <span class="hide_color">一</span>
+                                <span class="hide_color">場</span>
+                                <span class="show_color">驚</span>
+                                <span class="hide_color">險</span>
+                                <span class="hide_color">刺</span>
+                                <span class="hide_color">激</span>
+                                <span class="show_color">的</span>
+                                <span class="hide_color">旅</span>
+                                <span class="hide_color">途</span>
+                                <br>
+                                <span class="show_color">在</span>
+                                <span class="hide_color">藝</span>
+                                <span class="hide_color">術</span>
+                                <span class="hide_color">與</span>
+                                <span class="show_color">邏</span>
+                                <span class="hide_color">輯</span>
+                                <span class="hide_color">間</span>
+                                <span class="hide_color">取</span>
+                                <span class="show_color">得</span>
+                                <span class="hide_color">平</span>
+                                <span class="hide_color">衡</span>
+                                <span class="hide_color">的</span>
+                                <span class="show_color">道</span>
+                                <span class="hide_color">路</span>
+                                <span class="hide_color">上</span>
+                                <br>
+                                <span class="show_color">今</span>
+                                <span class="hide_color">後</span>
+                                <span class="hide_color">也</span>
+                                <span class="hide_color">會</span>
+                                <span class="show_color">繼</span>
+                                <span class="hide_color">續</span>
+                                <span class="hide_color">努</span>
+                                <span class="hide_color">力</span>
+                            </div>
+                        </div>
+                        <div class="view view3">
+                            <div class="content">
+                                <span class="hide_color">人</span>
+                                <span class="hide_color">稱</span>
+                                <span class="show_color name_style">飛</span>
+                                <span class="hide_color name_style">膝</span>
+                                <br>
+                                <span class="hide_color">個</span>
+                                <span class="hide_color">性</span>
+                                <span class="hide_color">隨</span>
+                                <span class="hide_color">和</span>
+                                <span class="hide_color">、</span>
+                                <span class="show_color">帶</span>
+                                <span class="hide_color">點</span>
+                                <span class="hide_color">幽</span>
+                                <span class="show_color">默</span>
+                                <br>
+                                <span class="hide_color">喜</span>
+                                <span class="show_color">愛</span>
+                                <span class="hide_color">動</span>
+                                <span class="hide_color">漫</span>
+                                <span class="show_color">與</span>
+                                <span class="hide_color">音</span>
+                                <span class="hide_color">樂</span>
+                                <br>
+                                <span class="hide_color">期</span>
+                                <span class="hide_color">許</span>
+                                <span class="show_color">自</span>
+                                <span class="hide_color">己</span>
+                                <span class="hide_color">可</span>
+                                <span class="show_color">以</span>
+                                <span class="hide_color">成</span>
+                                <span class="hide_color">為</span>
+                                <span class="hide_color">被</span>
+                                <span class="show_color">別</span>
+                                <span class="hide_color">人</span>
+                                <span class="hide_color">信</span>
+                                <span class="hide_color">任</span>
+                                <span class="show_color">的</span>
+                                <span class="hide_color">對</span>
+                                <span class="hide_color">象</span>
+                                <br>
+                                <span class="hide_color">期</span>
+                                <span class="hide_color">許</span>
+                                <span class="show_color">自</span>
+                                <span class="hide_color">己</span>
+                                <span class="show_color">可</span>
+                                <span class="hide_color">以</span>
+                                <span class="hide_color">一</span>
+                                <span class="show_color">次</span>
+                                <span class="hide_color">又</span>
+                                <span class="hide_color">一</span>
+                                <span class="hide_color">次</span>
+                                <span class="show_color">地</span>
+                                <span class="hide_color">感</span>
+                                <span class="show_color">動</span>
+                                <span class="hide_color">他</span>
+                                <span class="hide_color">人</span>
+                            </div>
+                        </div>
+                        <div class="view view4">
+                            <div class="content shadow-text skill">
+                                <section>
+                                    <h1>Skill 技能欄</h1>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="view view5">
+                            <div class="content shadow-text nuxt">
+                                <section>
+                                    <h2>NUXT</h2>
+                                    <div class="hide_n_show">
+                                        <p>前後端分離</p>
+                                        <p>Single Page Application</p>
+                                        <p>Server Side Rendering</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="view view6">
+                            <div class="circle left">
+                                <div class="circle_middle left">
+                                    <div class="circle_content top"></div>
+                                    <div class="content">遊戲在娛樂方面，以及遊戲在服務方面所蘊含的無限可能</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view view7">
+                            
+                        </div>
+                        <div class="view view8">
+                        </div>
+                        <div class="view view9">
+                            <div class="content">
+                                <h1>技術使用 and 相關連結</h1>
+                                <p>純css 的parallax 效果展現 </p>
+                                <p>各式css 樣式效果展現</p>
+                                <p>隨機文字背景與重點文字顏色變化( a k a t s u k i )</p>
+                                <p>vue 的component 技術展現(nuxt version only) </p>
+                                <p>nuxt 的渲染技術呈現(nuxt version only)</p>
+                                <br>
+                                <hr>
+                                <br>
+                                <section>
+                                    <p>此頁面的github: <a href="https://github.com/yayayahahaha/nuxt">https://github.com/yayayahahaha/nuxt</a></p>
+                                    <p>個人履歷: <a href="https://www.cakeresume.com/flyc">CakeResume</a></p>
+                                    <p>個人作品集網站: <a href="https://yayayahahaha.github.io/wonder/">Wonder</a></p>
+                                    <p>Codepen: <a href="https://codepen.io/FlyC/pens/popular/">Codepen</a></p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src='assets/js/akatsuki.js'></script>
+
+</html>
